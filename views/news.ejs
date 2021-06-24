@@ -1,0 +1,143 @@
+    <div class="team-area section-padding30">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-6">
+            <div class="section-tittle text-center mb-100">
+              <h2>Our Specialist</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-">
+            <div class="single-team mb-30">
+              <div class="team-img">
+                <img class="Syrym" src="/img/Syrym.png" object-fit="cover">
+              </div>
+              <div class="team-caption">
+                <h3><a href="#">Syrym Yeskozha</a></h3>
+                <span>He is 19 years old and he is student of Astana IT University. He has a great imagination and is easily given scripts. He enjoys playing DOTA 2 computer game.</span>
+                <div class="team-social">
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#"><i class="fas fa-globe"></i></a>
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-">
+            <div class="single-team mb-30">
+              <div class="team-img">
+                <img class="Aidar" src="/img/Aidar.jpg" object-fit="cover">
+              </div>
+              <div class="team-caption">
+                <h3><a href="#">Ospankulov Aidar</a></h3>
+                <span>One of the most in-demanded worker. He is 23 years old and he is first year student in Astana IT University. The operator's job is just a side job.</span>
+                <div class="team-social">
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#"><i class="fas fa-globe"></i></a>
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-">
+            <div class="single-team mb-30">
+              <div class="team-img">
+                <img class="Eldiyar" src="/img/Eldiyar.jpg" object-fit="cover">
+              </div>
+              <div class="team-caption">
+                <h3><a href="#">Zhantileuov Eldiyar</a></h3>
+                <span>The widespread person is good at everything. One day he works as a teacher, another day as a startup developer, and finally as a news anchor.Kazakh Elon Musk.</span>
+                <!-- Team social -->
+                <div class="team-social">
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#"><i class="fas fa-globe"></i></a>
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-">
+            <div class="single-team mb-30">
+              <div class="team-img">
+                <img class="Dimon" src="/img/Dimon.jpg" object-fit="cover">
+              </div>
+              <div class="team-caption">
+                <h3><a href="#">Dinmukhamed Temirgaly</a></h3>
+                <span>He is 18 years old and he is group mate of operator and director. Working as a journalist came to him cause of communication with individuals. He enjoys playing DOTA 2 computer game.</span>
+                <div class="team-social">
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#"><i class="fas fa-globe"></i></a>
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          </<div>
+        </div>
+      </div>
+    </div>
+
+  <script>
+    var syrym = document.querySelector('img.Syrym');
+    syrym.addEventListener('click', function() {
+      if (syrym.src != '/img/Syrym2.jpg') {
+        syrym.src = "/img/Syrym2.jpg";
+      }
+    })
+
+    var aidar = document.querySelector('img.Aidar');
+    aidar.addEventListener('click', function() {
+      if (aidar.src != '/img/Aidar2.jpg') {
+        aidar.src = "/img/Aidar2.jpg";
+      }
+    })
+
+    var Eldiyar = document.querySelector('img.Eldiyar');
+    Eldiyar.addEventListener('click', function() {
+      if (Eldiyar.src != '/img/Eldiyar2.jpg') {
+        Eldiyar.src = "/img/Eldiyar2.jpg";
+      }
+    })
+
+    var Dimon = document.querySelector('img.Dimon');
+    Dimon.addEventListener('click', function() {
+      if (Dimon.src != '/img/Dimon2.jpg') {
+        Dimon.src = "/img/Dimon2.jpg";
+      }
+    })
+
+    var soundsss = document.querySelectorAll('img');
+    var letsgo = new Audio("/sounds/letsgo.mp3");
+    var bruh = new Audio("/sounds/bruh.mp3");
+    var noice = new Audio("/sounds/Noice.mp3");
+    var whatsup = new Audio("/sounds/whatsup.mp3");
+
+    for (i = 0; i < soundsss.length; i++) {
+      switch (i) {
+        case 0:
+          soundsss[0].addEventListener('click', function() {
+            play(letsgo)
+          });
+        case 1:
+          soundsss[1].addEventListener('click', function() {
+            play(bruh)
+          });
+        case 2:
+          soundsss[2].addEventListener('click', function() {
+            play(noice)
+          });
+        case 3:
+          soundsss[3].addEventListener('click', function() {
+            play(whatsup)
+          });
+      }
+    }
+
+    function play(x) {
+      x.play.call(x);
+    }
+  </script>
+
+
+  

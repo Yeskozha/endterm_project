@@ -1,0 +1,71 @@
+#news {
+  border: 1px solid gray;
+  flex: 2;
+  width: 300px;
+}
+
+#newsDB {
+  border: 1px solid gray;
+  padding: 30px;
+  top: 0px;
+  text-align: center;
+}
+
+#weather {
+  right: 0;
+  font-style: italic;
+  background-color: lightgray;
+  position: absolute;
+
+  border: 1px solid gray;
+  max-width: 250px;
+  padding: 2px;
+  flex: 1;
+}
+
+.block {
+  border: 1px solid gray;
+  padding: 30px;
+  top: 0px;
+  text-align: center;
+  flex: 1;
+}
+
+.button {
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 16px;
+  padding: 5px;
+  width: 100px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 15px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
